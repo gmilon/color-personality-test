@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useState } from "react";
-import type { Property } from "csstype";
 import { quizQuestions, Answer, colorsText } from "@/data/questions";
 
 function shuffleArray<T extends Record<string, unknown>[]>(array: T) {
