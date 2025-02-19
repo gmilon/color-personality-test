@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import type { Property } from "csstype";
-import { quizQuestions, Answer } from "@/data/questions";
+import { quizQuestions, Answer, colorsText } from "@/data/questions";
 
 function shuffleArray<T extends Record<string, unknown>[]>(array: T) {
   const shuffledArray = [...array];
@@ -132,8 +132,7 @@ const Home = () => {
           <h2 className={"mb-4 flex gap-2 items-center"}>
             <span>Your dominant color is:</span>
             <span
-              className={"text-3xl font-bold uppercase"}
-              style={{ color: dominantColor as Property.Color }}
+              className={`text-3xl font-bold uppercase ${colorsText[dominantColor?.toLowerCase() ?? "green"].text}`}
             >
               {dominantColor}
             </span>

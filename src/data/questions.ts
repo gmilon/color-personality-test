@@ -398,3 +398,10 @@ export const quizQuestions: QuizQuestion[] = [
     ],
   },
 ];
+
+export const colorsText: Record<string, { text: string; bg: string }> = {
+  red: { text: "text-red-500", bg: "bg-red-50" },
+  blue: { text: "text-blue-500", bg: "bg-blue-50" },
+  yellow: { text: "text-yellow-500", bg: "bg-yellow-50" },
+  green: { text: "text-green-500", bg: "bg-green-50" },
+};
